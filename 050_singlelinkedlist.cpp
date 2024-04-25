@@ -150,4 +150,12 @@ int main() {
 				system("pause");
 				system("cls");
 				break;
-			
+			case 2:
+				if (listEmpty())
+				{
+					cout << "List kosong" << endl;
+					system("pause");
+					system("cls");
+					break;
+				}
+				int nim;
