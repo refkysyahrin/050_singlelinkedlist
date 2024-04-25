@@ -79,7 +79,7 @@ bool deleteNode(int nim) {
 		return false;
 	previous->next = current->next;
 	if (current == START)
-		START current->next;
+		START = current->next;
 	return true;
 }
 bool listEmpty() {
@@ -89,3 +89,13 @@ bool listEmpty() {
 		return false;
 
 }
+
+void traverse() {
+	if (listEmpty()) {
+		cout << "List Kosong" << endl;
+		system("pause");
+		system("cls");
+		return;
+	}
+	
+
